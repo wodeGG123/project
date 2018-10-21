@@ -19,6 +19,8 @@ react的渲染机制是浅监听state的对象变化进行渲染，一些对象�
 5、iscroll
 6、json-server
 模拟后端数据接口返回模拟数据
+7、ajax-request
+由于json-server不支持fetch的传参模式，所以暂用ajax来操作PUT请求方式传参
 
 ## 单元测试：
 框架：mocha、jsdom
@@ -47,9 +49,11 @@ ps:本来是可以直接使用props属性作为render参数的，但是涉及到
 原因：不在同一个domain下面进行api请求会出现跨域问题（浏览器安全机制）
 解决：webpack有一套代理服务配置，只需要修改webpack配置，设置proxy，dev的时候解决跨域请求问题
 
+问题：fetch使用PUT方式修改模拟数据不成功
+原因：fetch传输数据放在body内部，支持的格式只有json字符串（JSON.stringify）和formdata，json-server不支持fetch传参模式
+解决：使用ajax代替，不使用回调就自己封装一层promise
 ## PS
 1、黄色块的颜色值对应不上 提示：#FF9A2A，取色：#ffb900
 2、齿轮2s转一圈，感觉太快了，自己修改为10s/r
 3、三个模块的宽度两张图不一样，设计图是270px，拆分图是234px, 根据个人审美观取设计图的尺寸
 4、新增resources的pop组件监听点击事件，自己写了一个获取所有父辈节点的方法（utils/dom.js）来判断是否点击到pop对象
-5、为了满足demo一些展示需求，自己新增了一些api，例如userinfo、p-agents、v-agents。

@@ -7,6 +7,7 @@ import logo_ubuntu from '../../assets/os-icons/ubuntu.png'
 import logo_windows from '../../assets/os-icons/windows.png'
 import _ from 'lodash'
 import dom from '../../utils/dom'
+import agent from '../../services/agent'
 
 class Main extends React.Component {
     constructor(props) {
@@ -149,7 +150,7 @@ class Main extends React.Component {
         this.setState({
             data
         })
-        //下面添加修改resources的代码（删除）
+        agent.updateAgent(data)
     }
     addResources() {
         let text = this.state.text
@@ -159,8 +160,7 @@ class Main extends React.Component {
         this.setState({
             data
         })
-
-        //下面添加修改resources的代码（添加）
+        agent.updateAgent(data)
     }
     confirm() {
         this.addResources()

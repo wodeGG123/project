@@ -8,6 +8,7 @@
     "test": "mocha --require babel-core/register ./test/setup.js"
   },
   "dependencies": {
+    "ajax-request": "^1.2.3",
     "dva": "^2.4.0",
     "lodash": "^4.17.11",
     "react": "^16.2.0",
