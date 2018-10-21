@@ -1,4 +1,4 @@
-## thoughtWorks homeWork
+# thoughtWorks homeWork
 ## 使用方式
 此项目需要启动2个服务：UI服务和数据服务。
 目录分别是"/"和"/mock/mock-server"
