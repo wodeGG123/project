@@ -1,0 +1,83 @@
+@import '../../index';
+.wrap{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 1;
+}
+.content{
+    width: 1170px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    height: 34px;
+}
+.user{
+    position: absolute;
+    right: 0px;
+}
+.userFace{
+    display: flex;
+}
+.userFace img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.userFace i{
+    font-size: 24px;
+    color: #9b9b9b;
+    align-items: center;
+    display: flex;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: .3s all;
+}
+.rotate180{
+    transform: rotate(180deg);
+}
+.userTools{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 139px;
+    padding: 11px 0;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+}
+.userTools ul{
+    width: 100%;
+}
+.userTools ul li{
+    padding-left: 14px;
+    height: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.userTools ul li:hover{
+    cursor: pointer;
+    background-color: #EFEFEF;
+}
+.userTools ul li i{
+    color: $color2_1;
+    width: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+.userTools ul li span{
+    margin-left: 12px;
+    color: $color2_1;
+}

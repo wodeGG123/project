@@ -1,0 +1,30 @@
+@import '../../index';
+.wrap{
+    width: 100%;
+    box-sizing: border-box;
+}
+.content{
+    width: 100%;
+    padding-top: 18px;
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mid{
+    margin-top: 16px;
+}
+.list{
+   width: 100%; 
+   margin-top: 16px;
+   position: relative;
+   padding-bottom: 1px;
+}
+.wrap :global(.iScrollIndicator){
+    transition-duration:300ms!important;
+    opacity: 0;
+}
+.wrap:hover :global(.iScrollIndicator){
+    opacity: 1;
+}

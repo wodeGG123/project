@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'cruise';
+  src:
+    url('./fonts/cruise.ttf?srz1pg') format('truetype'),
+    url('./fonts/cruise.woff?srz1pg') format('woff'),
+    url('./fonts/cruise.svg?srz1pg#cruise') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cruise' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:global(.icon-desktop:before) {
+  content: "\e30c";
+}
+:global(.icon-boat:before) {
+  content: "\e532";
+}
+:global(.icon-deny:before) {
+  content: "\e611";
+}
+:global(.icon-folder:before) {
+  content: "\e2c8";
+}
+:global(.icon-info:before) {
+  content: "\e88f";
+}
+:global(.icon-plus:before) {
+  content: "\f067";
+}
+:global(.icon-search:before) {
+  content: "\f002";
+}
+:global(.icon-th-card:before) {
+  content: "\f00a";
+}
+:global(.icon-th-list:before) {
+  content: "\f00b";
+}
+:global(.icon-close:before) {
+  content: "\f00d";
+}
+:global(.icon-cog:before) {
+  content: "\f013";
+}
+:global(.icon-trash:before) {
+  content: "\f014";
+}
+:global(.icon-sign-in:before) {
+  content: "\f090";
+}
+:global(.icon-navicon:before) {
+  content: "\f0c9";
+}
+:global(.icon-dashboard:before) {
+  content: "\f0e4";
+}
+:global(.icon-sitemap:before) {
+  content: "\f0e8";
+}
+:global(.icon-coffee:before) {
+  content: "\f0f4";
+}
+:global(.icon-angle-up:before) {
+  content: "\f106";
+}
+:global(.icon-angle-down:before) {
+  content: "\f107";
+}
+:global(.icon-life-bouy:before) {
+  content: "\f1cd";
+}
+:global(.icon-id-card:before) {
+  content: "\f2c3";
+}

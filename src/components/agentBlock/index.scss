@@ -1,0 +1,232 @@
+@import '../../index';
+.wrap{
+    width: 100%;
+    height: 108px;
+    background-color: #fff;
+    padding: 20px 28px 15px 22px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    margin-bottom: 16px;
+}
+.logo{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 30px;
+}
+.infoTop{
+    display: flex;
+}
+.infoTop > i{
+    font-size: 16px;
+    color: #999999;
+    margin-right: 12px;
+}
+.infoTop > a{
+    color: $color1_1;
+    text-decoration: none;
+    font-weight: bold;
+}
+.infoTop > span{
+    color: $color2_1;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.infoTop > div{
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    background-color: $colorful2;
+    margin-left: 30px;
+    margin-right: 52px;
+    font-size: 14px;
+}
+.infoTop > div.building{
+    background-color:$colorful1;
+}
+.infoBottom{
+    display: flex;
+    position: relative;
+}
+.infoBottom > i{
+    font-size: 16px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color1_1;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s all;
+}
+.infoBottom > i:active{
+    background-color: $color1_2;
+}
+.browserList{
+    display: flex;
+}
+.browserList dl{
+    margin-left: 10px;
+    display: flex;
+    color: $color2_1;
+    background-color: $color3_2;
+    height: 26px;
+    align-items: center;
+    padding: 0 7px;
+}
+.browserList dl dt{
+
+}
+.browserList dl dd{
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+.browserList dl dd i{
+    cursor: pointer;
+    font-size: 16px;
+}
+.addBlock{
+    position: absolute;
+    width: 570px;
+    background-color: #fff;
+    border:1px solid $color1_1;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+    padding: 25px 15px 18px 15px;
+    top: 45px;
+    left: -13px;
+    z-index: 1;
+}
+.addBlock p{
+    color: #999;
+}
+.addInput{
+    margin-top: 10px;
+}
+.addInput input{
+    height: 34px;
+    width: 100%;
+    line-height: 34px;
+    outline: none;
+    color: #999;
+    text-indent: 16px;
+    font-size: 14px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-shadow: 0px 3px 3px inset rgba(0,0,0,0.1);
+}
+.addButton{
+    margin-top: 24px;
+}
+.addButtonConfirm{
+    width: 126px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    background-color: $color1_1;
+    border-radius: 0;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: .3s all;
+}
+.addButtonConfirm:active{
+    background-color: $color1_2;
+}
+
+.addButtonCancel{
+    width: 118px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    background-color: $color2_1;
+    border-radius: 0;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .3s all;
+}
+.addButtonCancel:active{
+    background-color: $color2_2;
+}
+.addBlock > i{
+    position: absolute; 
+    font-size: 20px;
+    color: $color1_1;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+    transition: .3s all;
+}
+.addBlock > i:active{
+    color: $color1_2;
+}
+.triangleWrap{
+    position: absolute;
+    top: -17px;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 17.3px 10px;
+    border-color: transparent transparent $color1_1 transparent;
+    position:relative;
+}
+.triangle span{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 17.3px 10px;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    left: -10px;
+    top: 3px;
+}
+
+
+.deny{
+    width: 89px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 28px;
+    bottom: 15px;
+    background-color: $color1_1;
+    color: #fff;
+    transition: .3s all;
+}
+.deny:active{
+    background-color: $color1_2;
+}
+.deny i{
+    font-size: 16px;
+}
+.deny span{
+    margin-left: 8px;
+    font-size: 14px;
+}

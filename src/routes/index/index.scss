@@ -1,0 +1,19 @@
+@import '../../index';
+.wrap{
+    width: 100%;
+    background-color: $color3_1;
+}
+.content{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 70px 0 29px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    width: 270px;
+    position: relative;
+}
+.page{
+    width: 870px;
+}

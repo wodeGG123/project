@@ -1,0 +1,40 @@
+@import '../../index';
+.wrap{
+    width: 270px;
+    height: 116px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.num{
+    font-size: 48px;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+.icon{
+    font-size: 144px;
+    color: #fff;
+    opacity: 0.2;
+}
+:global(.icon-rotate){
+    animation: iconRotate 10s linear infinite;
+}
+@keyframes iconRotate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}

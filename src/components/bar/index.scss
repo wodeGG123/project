@@ -1,0 +1,78 @@
+@import '../../index';
+.wrap{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    position: relative;
+}
+.tabs{
+    display: flex;
+}
+.tabs span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color2_1;
+    width: 82px;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 16px;
+    transition: .3s all;
+    border-right: 1px solid $color3_2;
+}
+.tabs span:hover{
+    cursor: pointer;
+    color: $color1_1;
+    border-bottom:3px solid $color1_1;
+}
+.tabs span.act{
+    color: $color1_1;
+    border-bottom:3px solid $color1_1;
+}
+.input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.input i{
+    position: absolute;
+    color: #999999;
+    left: 8px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.input input{
+    height: 30px;
+    width: 171px;
+    border: none;
+    border-top: 1px solid $color3_2;
+    border-left: 1px solid $color3_2;
+    background-color: $color3_1;
+    outline: none;
+    text-indent: 31px;
+    color: #999;
+}
+.showType{
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.showType i{
+    font-size: 20px;
+    color: $color2_1;
+    transition: .3s all;
+    margin-left: 20px;
+}
+.showType i:hover{
+    color: $color1_1;
+    cursor: pointer;
+}
+.showType i.showTypeAct{
+    color: $color1_1;
+}

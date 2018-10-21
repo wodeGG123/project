@@ -1,0 +1,23 @@
+@import '../../index';
+.wrap{
+    width: 270px;
+    height: 116px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.wrap dl{
+    width: 90px;
+    text-align: center;
+}
+.wrap dl dt{
+    font-size: 12px;
+    color: $color2_1;
+}
+.wrap dl dd{
+    margin-top: 32px;
+    font-size: 20px;
+    color: $color2_1;
+}
